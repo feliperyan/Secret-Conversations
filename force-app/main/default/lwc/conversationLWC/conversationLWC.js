@@ -1,3 +1,5 @@
 import { LightningElement } from 'lwc';
 
-export default class ConversationLWC extends LightningElement {}
+export default class ConversationLWC extends LightningElement {
+    conversation_cat;
+}

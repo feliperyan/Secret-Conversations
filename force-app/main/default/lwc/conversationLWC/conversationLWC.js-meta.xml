@@ -9,7 +9,7 @@
     </targets>
     <targetConfigs>
       <targetConfig targets="lightning__RecordPage">
-          <property name="conversationg_cat" type="String" label="Conversation Category" datasource="apex://ConversationPickListValues"/>
+          <property name="conversation_cat" type="String" label="Conversation Category" datasource="apex://ConversationPickListValues"/>
           <objects>
               <object>Claim__c</object>            
           </objects>
