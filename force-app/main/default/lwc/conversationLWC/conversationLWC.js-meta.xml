@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="conversationLWC">
     <apiVersion>45.0</apiVersion>
-    <isExposed>false</isExposed>
+    <isExposed>true</isExposed>
+    <masterLabel>Safe Conversation</masterLabel>
+    <description>This demo component showcases how to segregate chatter conversations between different audiences.</description>
+    <targets>
+      <target>lightning__RecordPage</target>      
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__RecordPage">
+          <property name="conversationg_cat" type="String" label="Conversation Category" datasource="apex://ConversationPickListValues"/>
+          <objects>
+              <object>Claim__c</object>            
+          </objects>
+      </targetConfig>      
+    </targetConfigs>
 </LightningComponentBundle>
