@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conversation_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Conversation Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner and Customer</fullName>
+                <default>false</default>
+                <label>Partner and Customer</label>
+            </value>
+            <value>
+                <fullName>Partner and Employee</fullName>
+                <default>false</default>
+                <label>Partner and Employee</label>
+            </value>
+            <value>
+                <fullName>Employee and Customer</fullName>
+                <default>false</default>
+                <label>Employee and Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
