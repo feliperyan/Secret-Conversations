@@ -81,6 +81,17 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
+            <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Employee and Customer</value>
+            </componentInstanceProperties>
+            <componentName>conversationLWC</componentName>
+        </componentInstances>
+        <name>Facet-71e7db3f-0258-4763-a483-0021d578ef6d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
             <componentName>runtime_sales_activities:activityPanel</componentName>
         </componentInstances>
         <mode>Replace</mode>
@@ -98,15 +109,15 @@
     <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
-                <name>conversation_cat</name>
-                <value>Employee and Customer</value>
+                <name>body</name>
+                <value>Facet-71e7db3f-0258-4763-a483-0021d578ef6d</value>
             </componentInstanceProperties>
-            <componentName>conversationLWC</componentName>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Conversations</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
         </componentInstances>
-        <name>Facet-71e7db3f-0258-4763-a483-0021d578ef6d</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
                 <name>active</name>
@@ -130,17 +141,6 @@
             <componentInstanceProperties>
                 <name>title</name>
                 <value>Standard.Tab.collaborate</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>Facet-71e7db3f-0258-4763-a483-0021d578ef6d</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Conversations</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>

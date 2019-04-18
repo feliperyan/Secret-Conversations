@@ -5,6 +5,9 @@
         "paths": {
             "c/conversationLWC": [
                 "conversationLWC/conversationLWC.js"
+            ],
+            "c/postConversationLWC": [
+                "postConversationLWC/postConversationLWC.js"
             ]
         }
     },

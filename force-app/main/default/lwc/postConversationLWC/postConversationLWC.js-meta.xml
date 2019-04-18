@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="postConversationLWC">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+      <target>lightning__RecordPage</target>      
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__RecordPage">
+          <property name="conversation_cat" type="String" label="Conversation Category" datasource="apex://ConversationPickListValues"/>
+          <objects>
+              <object>Claim__c</object>            
+          </objects>
+      </targetConfig>      
+    </targetConfigs>
+</LightningComponentBundle>
