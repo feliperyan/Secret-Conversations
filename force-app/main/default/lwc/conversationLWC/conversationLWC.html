@@ -28,7 +28,7 @@
                 
             </template>
         </template>
-        <template if:false={conversations}>
+        <template if:true={error}>
             <h1 class="slds-text-heading_small">No {conversation_cat} conversatsions</h1>
             <br/>
         </template>

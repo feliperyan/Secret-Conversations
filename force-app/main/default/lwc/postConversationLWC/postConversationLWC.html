@@ -1,14 +1,18 @@
 <template>
     <div class="slds-m-around_medium">
-        
-        <lightning-input label="Message" type="string" 
-            value={stringValue} class="string-input"
+
+        <lightning-input label="Message" type="string" value={stringValue} class="string-input"
             onchange={handleStringChange}></lightning-input>
+
+        <br />
+
+        <lightning-button label="Post" variant="brand" onclick={handleButtonClick}></lightning-button>
         
-            <br />
-        
-        <lightning-button label="Post" variant="brand" 
-            onclick={handleButtonClick}></lightning-button>
-            
+        <template if:true={response}>
+            <p class="slds-p-horizontal_small slds-text-align_right slds-text-color_weak slds-text-body_small">{response}</p>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
     </div>
 </template>

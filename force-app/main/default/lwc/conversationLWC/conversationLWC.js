@@ -5,9 +5,9 @@ export default class ConversationLWC extends LightningElement {
     @api conversation_cat;
     @api recordId;
     @track conversations;
-    @api error;
+    @track error;
 
-    @wire(getFeedItemsForClaim, { Category: "$conversation_cat", ClaimID: "$recordId" })
+    @wire(getFeedItemsForClaim, { category: "$conversation_cat", claimId: "$recordId" })
     processConversation({error, data}){
         if (data) {
             console.log(data);

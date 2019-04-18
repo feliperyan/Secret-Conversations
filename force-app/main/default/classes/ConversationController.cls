@@ -4,10 +4,10 @@ public with sharing class ConversationController {
     }
 
     @AuraEnabled(cacheable=true)
-    public static List<String> getConversationRecordsForClaim(String Category, String ClaimID){
+    public static List<String> getConversationRecordsForClaim(String category, String claimId){
         Conversation__c convo = [Select Id, Conversation_Category__c 
             From Conversation__c 
-            Where Claim__c =: ClaimID and Conversation_Category__c =: Category Limit 1];
+            Where Claim__c =: claimId and Conversation_Category__c =: category Limit 1];
         
         List<String> messages = getComments(convo.Id);
 
@@ -27,10 +27,10 @@ public with sharing class ConversationController {
     }
 
     @AuraEnabled(cacheable=true)
-    public static List<ConnectApi.FeedElement> getFeedItemsForClaim(String Category, String ClaimID){
+    public static List<ConnectApi.FeedElement> getFeedItemsForClaim(String category, String claimId){
         Conversation__c convo = [Select Id, Conversation_Category__c 
             From Conversation__c 
-            Where Claim__c =: ClaimID and Conversation_Category__c =: Category Limit 1];
+            Where Claim__c =: claimId and Conversation_Category__c =: category Limit 1];
         
         return getFeedItems(convo.Id);        
     }
@@ -38,6 +38,17 @@ public with sharing class ConversationController {
     public static List<ConnectApi.FeedElement> getFeedItems(String recordID){
         ConnectApi.FeedElementPage fep = ConnectApi.ChatterFeeds.getFeedElementsFromFeed(Network.getNetworkId(), ConnectApi.FeedType.Record , recordID);
         return fep.elements;        
+    }
+
+    @AuraEnabled
+    public static ConnectApi.FeedElement postMessage(String message, String claimId, String category){
+        Conversation__c convo = [Select Id, Conversation_Category__c 
+            From Conversation__c 
+            Where Claim__c =: claimId and Conversation_Category__c =: category Limit 1];
+
+        ConnectApi.FeedElement feedElement = ConnectApi.ChatterFeeds.postFeedElement(Network.getNetworkId(), convo.id, ConnectApi.FeedElementType.FeedItem, message);
+        
+        return feedElement;
     }
 
 }
