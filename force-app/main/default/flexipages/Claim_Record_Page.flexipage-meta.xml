@@ -39,6 +39,112 @@
     <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Employee and Customer</value>
+            </componentInstanceProperties>
+            <componentName>conversationLWC</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Employee and Customer</value>
+            </componentInstanceProperties>
+            <componentName>postConversationLWC</componentName>
+        </componentInstances>
+        <name>Facet-99a2217f-364e-4029-b3c9-6d92575db807</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Partner and Employee</value>
+            </componentInstanceProperties>
+            <componentName>conversationLWC</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Partner and Employee</value>
+            </componentInstanceProperties>
+            <componentName>postConversationLWC</componentName>
+        </componentInstances>
+        <name>Facet-a0f8a520-1ceb-4542-b04a-9c2d2e6e1335</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Partner and Customer</value>
+            </componentInstanceProperties>
+            <componentName>conversationLWC</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>conversation_cat</name>
+                <value>Partner and Customer</value>
+            </componentInstanceProperties>
+            <componentName>postConversationLWC</componentName>
+        </componentInstances>
+        <name>Facet-vjh9iyx23d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>active</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-99a2217f-364e-4029-b3c9-6d92575db807</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Employee and Customer</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-a0f8a520-1ceb-4542-b04a-9c2d2e6e1335</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Partner and Employee</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-vjh9iyx23d</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Partner and Customer</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <name>Facet-774c9548-6308-4dcb-ba5b-60910b8c214c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>tabs</name>
+                <value>Facet-774c9548-6308-4dcb-ba5b-60910b8c214c</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tabset</componentName>
+        </componentInstances>
+        <name>Facet-66020149-abf9-45b3-b496-6d93702ff94c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
                 <name>body</name>
                 <value>relatedTabContent</value>
             </componentInstanceProperties>
@@ -63,6 +169,17 @@
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-66020149-abf9-45b3-b496-6d93702ff94c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Conversations</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
         <mode>Replace</mode>
         <name>maintabs</name>
         <type>Facet</type>
@@ -81,24 +198,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentInstanceProperties>
-                <name>conversation_cat</name>
-                <value>Employee and Customer</value>
-            </componentInstanceProperties>
-            <componentName>conversationLWC</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>conversation_cat</name>
-                <value>Employee and Customer</value>
-            </componentInstanceProperties>
-            <componentName>postConversationLWC</componentName>
-        </componentInstances>
-        <name>Facet-71e7db3f-0258-4763-a483-0021d578ef6d</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
             <componentName>runtime_sales_activities:activityPanel</componentName>
         </componentInstances>
         <mode>Replace</mode>
@@ -114,21 +213,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>active</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>Facet-71e7db3f-0258-4763-a483-0021d578ef6d</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Conversations</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
                 <name>active</name>
